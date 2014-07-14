@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		639D85A119748F5D00254870 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639D85A019748F5D00254870 /* Cocoa.framework */; };
+		639D85AB19748F5D00254870 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 639D85A919748F5D00254870 /* InfoPlist.strings */; };
+		639D85AD19748F5D00254870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 639D85AC19748F5D00254870 /* main.m */; };
+		639D85B119748F5D00254870 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 639D85AF19748F5D00254870 /* Credits.rtf */; };
+		639D85B419748F5D00254870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 639D85B319748F5D00254870 /* AppDelegate.m */; };
+		639D85B719748F5E00254870 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639D85B519748F5E00254870 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		639D859D19748F5D00254870 /* SDL2game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDL2game.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		639D85A019748F5D00254870 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		639D85A319748F5D00254870 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		639D85A419748F5D00254870 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		639D85A519748F5D00254870 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		639D85A819748F5D00254870 /* SDL2game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDL2game-Info.plist"; sourceTree = "<group>"; };
+		639D85AA19748F5D00254870 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		639D85AC19748F5D00254870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		639D85AE19748F5D00254870 /* SDL2game-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL2game-Prefix.pch"; sourceTree = "<group>"; };
+		639D85B019748F5D00254870 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		639D85B219748F5D00254870 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		639D85B319748F5D00254870 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		639D85B619748F5E00254870 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		639D859A19748F5D00254870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639D85A119748F5D00254870 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		639D859419748F5D00254870 = {
+			isa = PBXGroup;
+			children = (
+				639D85A619748F5D00254870 /* SDL2game */,
+				639D859F19748F5D00254870 /* Frameworks */,
+				639D859E19748F5D00254870 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		639D859E19748F5D00254870 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				639D859D19748F5D00254870 /* SDL2game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		639D859F19748F5D00254870 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				639D85A019748F5D00254870 /* Cocoa.framework */,
+				639D85A219748F5D00254870 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		639D85A219748F5D00254870 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				639D85A319748F5D00254870 /* AppKit.framework */,
+				639D85A419748F5D00254870 /* CoreData.framework */,
+				639D85A519748F5D00254870 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		639D85A619748F5D00254870 /* SDL2game */ = {
+			isa = PBXGroup;
+			children = (
+				639D85B219748F5D00254870 /* AppDelegate.h */,
+				639D85B319748F5D00254870 /* AppDelegate.m */,
+				639D85B519748F5E00254870 /* MainMenu.xib */,
+				639D85A719748F5D00254870 /* Supporting Files */,
+			);
+			path = SDL2game;
+			sourceTree = "<group>";
+		};
+		639D85A719748F5D00254870 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				639D85A819748F5D00254870 /* SDL2game-Info.plist */,
+				639D85A919748F5D00254870 /* InfoPlist.strings */,
+				639D85AC19748F5D00254870 /* main.m */,
+				639D85AE19748F5D00254870 /* SDL2game-Prefix.pch */,
+				639D85AF19748F5D00254870 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		639D859C19748F5D00254870 /* SDL2game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 639D85BA19748F5E00254870 /* Build configuration list for PBXNativeTarget "SDL2game" */;
+			buildPhases = (
+				639D859919748F5D00254870 /* Sources */,
+				639D859A19748F5D00254870 /* Frameworks */,
+				639D859B19748F5D00254870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDL2game;
+			productName = SDL2game;
+			productReference = 639D859D19748F5D00254870 /* SDL2game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		639D859519748F5D00254870 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Art User";
+			};
+			buildConfigurationList = 639D859819748F5D00254870 /* Build configuration list for PBXProject "SDL2game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 639D859419748F5D00254870;
+			productRefGroup = 639D859E19748F5D00254870 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				639D859C19748F5D00254870 /* SDL2game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		639D859B19748F5D00254870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639D85AB19748F5D00254870 /* InfoPlist.strings in Resources */,
+				639D85B119748F5D00254870 /* Credits.rtf in Resources */,
+				639D85B719748F5E00254870 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		639D859919748F5D00254870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639D85AD19748F5D00254870 /* main.m in Sources */,
+				639D85B419748F5D00254870 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		639D85A919748F5D00254870 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				639D85AA19748F5D00254870 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		639D85AF19748F5D00254870 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				639D85B019748F5D00254870 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		639D85B519748F5E00254870 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				639D85B619748F5E00254870 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		639D85B819748F5E00254870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		639D85B919748F5E00254870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		639D85BB19748F5E00254870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDL2game/SDL2game-Prefix.pch";
+				INFOPLIST_FILE = "SDL2game/SDL2game-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		639D85BC19748F5E00254870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDL2game/SDL2game-Prefix.pch";
+				INFOPLIST_FILE = "SDL2game/SDL2game-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		639D859819748F5D00254870 /* Build configuration list for PBXProject "SDL2game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639D85B819748F5E00254870 /* Debug */,
+				639D85B919748F5E00254870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		639D85BA19748F5E00254870 /* Build configuration list for PBXNativeTarget "SDL2game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639D85BB19748F5E00254870 /* Debug */,
+				639D85BC19748F5E00254870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 639D859519748F5D00254870 /* Project object */;
+}
