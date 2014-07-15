@@ -23,7 +23,7 @@ CMain::CMain(int passed_ScreenWidth, int passed_ScreenHeight)
 	tdates.B = "0";
 	tdates.C = "0";
 	tdates.D = "0";
-    //GGG
+    
 
 	Console = new CConsole(csdl_setup, tdates);
 }
