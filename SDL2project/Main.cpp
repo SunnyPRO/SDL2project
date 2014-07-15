@@ -66,7 +66,6 @@ void CMain::GameLoop()
 		Console->cDrawText(2, 20);
 		Console->cUpdate();
 		
-        CGUI.renderText
 
 		csdl_setup->End();
 	}

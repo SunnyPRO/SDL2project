@@ -42,7 +42,6 @@ private:
 
 	valDates tdates;
 	CConsole *Console;
-    
-    CGUI GUI;
+   
 
 };

@@ -1,17 +1,17 @@
 #pragma once
 
-#include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
-#include <SDL2_mixer/SDL_mixer.h>
+#include <SDL.h>
+#include <SDL_image.h>
+#include <SDL_mixer.h>
 //#include <SDL2_gfxPrimitives.h>
 //#include <SDL2_gfxPrimitives_font.h>
-#include "SDL2_ttf/SDL_ttf.h"
+#include <SDL_ttf.h>
 
 // if we're compiling for iOS (iPhone/iPad)
 #ifdef __IPHONEOS__
-#	include <SDL2/SDL_opengles.h> // we want to use OpenGL ES
+#	include <SDL_opengles.h> // we want to use OpenGL ES
 #else
-#	include <SDL2/SDL_opengl.h> // otherwise we want to use OpenGL
+#	include <SDL_opengl.h> // otherwise we want to use OpenGL
 #endif
 
 
