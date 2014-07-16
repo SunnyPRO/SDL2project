@@ -26,6 +26,11 @@ CMain::CMain(int passed_ScreenWidth, int passed_ScreenHeight)
     
 
 	Console = new CConsole(csdl_setup, tdates);
+    
+    GUI = new CGUI(csdl_setup->GetRenderer());
+    GUI->loadMedia();
+    
+    cout << "Constructor CMain" << endl;
 }
 
 
@@ -35,6 +40,8 @@ CMain::~CMain()
 	delete ForestArea;
 	delete bob;
 	delete Console;
+    delete GUI;
+    cout<< " CMain Destroyed! "<<endl;
 }
 
 
@@ -66,7 +73,8 @@ void CMain::GameLoop()
 		Console->cDrawText(2, 20);
 		Console->cUpdate();
 		
-        CGUI.renderText
+        SDL_SetRenderDrawColor(csdl_setup->GetRenderer(), 0xFF, 0xFF, 0xFF, 0xFF);
+        GUI->render(MouseX,MouseY);
 
 		csdl_setup->End();
 	}

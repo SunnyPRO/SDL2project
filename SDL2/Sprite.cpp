@@ -2,7 +2,6 @@
 
 CSprite::CSprite(SDL_Renderer* passed_renderer, string FilePath, int x, int y, int w, int h, float *passed_CameraX, float *passed_CameraY, CCollisionRectangle passed_CollisionRect)
 {
-	cout << "Constructor Sprite" << endl;
 
 	CollisionRect = passed_CollisionRect;
 	TEMPrect = passed_CollisionRect;
@@ -67,11 +66,14 @@ CSprite::CSprite(SDL_Renderer* passed_renderer, string FilePath, int x, int y, i
 	TEMPchar.F = new char;
 	for (int i = 0; i < 4; i++)
 		TEMPint[i] = 0;
+    
+    cout << "Constructor Sprite" << endl;
 }
 
 CSprite::~CSprite()
 {
-	SDL_DestroyTexture(image);	
+	SDL_DestroyTexture(image);
+    cout<< " CSprite Destroyed! "<<endl;
 }
 
 

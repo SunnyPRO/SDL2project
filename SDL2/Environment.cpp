@@ -2,8 +2,6 @@
 
 CEnvironment::CEnvironment(int ScreenWidth, int ScreenHeight, float *passed_CameraX, float *passed_CameraY, CSDL_Setup* passed_csdl_setup)
 {
-	cout << "Constructor Environment" << endl;
-
 	csdl_setup = passed_csdl_setup;
 
 	CameraX = passed_CameraX;
@@ -21,6 +19,8 @@ CEnvironment::CEnvironment(int ScreenWidth, int ScreenHeight, float *passed_Came
 
 	//trees.push_back(new Tree(300, 300, CameraX, CameraY, csdl_setup));
 	//tree = new Tree(300, 300, CameraX, CameraY, csdl_setup);
+    
+    cout << "Constructor Environment" << endl;
 }
 
 
@@ -35,6 +35,8 @@ CEnvironment::~CEnvironment()
 		delete (*i);
 	}
 	trees.clear();
+    
+    cout<< " CEnvironment Destroyed! "<<endl;
 }
 
 

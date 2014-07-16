@@ -3,8 +3,6 @@
 
 CConsole::CConsole(CSDL_Setup* passed_csdl_setup, valDates pA)
 {
-	cout << "Constructor Console" << endl;
-
 	csdl_setup = passed_csdl_setup;
 	 mMode = ModeOFF;
 	 mA.A = new char;
@@ -16,12 +14,15 @@ CConsole::CConsole(CSDL_Setup* passed_csdl_setup, valDates pA)
 	 mA = pA;
 	 OnePressed = false;
 	 TEMPstr = '\0';
+    
+    cout << "Constructor Console" << endl;
 }
 
 
 CConsole::~CConsole()
 {
 	//delete csdl_setup;
+    cout<< " CConsole Destroyed! "<<endl;
 }
 
 

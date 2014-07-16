@@ -2,7 +2,6 @@
 
 Tree::Tree(int passed_x, int passed_y, float *passed_CameraX, float *passed_CameraY, CSDL_Setup* csdl_setup)
 {
-	cout << "Constructor Tree" << endl;
 	CameraX = passed_CameraX;
 	CameraY = passed_CameraY;
 
@@ -11,6 +10,7 @@ Tree::Tree(int passed_x, int passed_y, float *passed_CameraX, float *passed_Came
 	y = passed_y;
 	Trunk = new CSprite(csdl_setup->GetRenderer(), "Data/resources/environment/Trunk.png", x, y, 43, 145, CameraX, CameraY, CCollisionRectangle(0,110,43,36));
 	Crown = new CSprite(csdl_setup->GetRenderer(), "Data/resources/environment/Crown.png", x - 72, y - 115, 183, 165, CameraX, CameraY, CCollisionRectangle());
+    	cout << "Constructor Tree" << endl;
 }
 
 
@@ -18,6 +18,7 @@ Tree::~Tree()
 {
 	delete Trunk;
 	delete Crown;
+    cout<< " Tree Destroyed! "<<endl;
 }
 
 void Tree::DrawCrown()

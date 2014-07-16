@@ -3,10 +3,10 @@
 
 CCollisionRectangle::CCollisionRectangle()
 {
-	cout << "Constructor CollisionRectangle" << endl;
 	OffsetX = 0;
 	OffsetY = 0;
 	SetRectangle(0, 0, 0, 0);
+    cout << "Constructor CollisionRectangle" << endl;
 }
 
 CCollisionRectangle::CCollisionRectangle(int x, int y, int w, int h)
@@ -19,6 +19,7 @@ CCollisionRectangle::CCollisionRectangle(int x, int y, int w, int h)
 
 CCollisionRectangle::~CCollisionRectangle()
 {
+    cout<< " CCollisionRectangle Destroyed! "<<endl;
 }
 
 

@@ -3,8 +3,6 @@
 
 MainCharacter::MainCharacter(CSDL_Setup* passed_SDL_Setup, int *passed_MouseX, int *passed_MouseY, float *passed_CameraX, float *passed_CameraY, CEnvironment* passed_Environment)
 {
-	cout << "Constructor MainCharacter" << endl;
-
 	Environment = passed_Environment;
 
 	CameraX = passed_CameraX;
@@ -24,12 +22,15 @@ MainCharacter::MainCharacter(CSDL_Setup* passed_SDL_Setup, int *passed_MouseX, i
 	Follow = false;
 	angle = 0;
 	stopAnimation = false;
+    
+    cout << "Constructor MainCharacter" << endl;
 }
 
 
 MainCharacter::~MainCharacter()
 {
 	delete bob;
+    cout<< " MainCharacter Destroyed! "<<endl;
 }
 
 void MainCharacter::Draw()

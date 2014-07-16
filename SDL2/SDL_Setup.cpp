@@ -3,8 +3,6 @@
 
 CSDL_Setup::CSDL_Setup(bool* quit,int ScreenWidth, int ScreenHeight)
 {
-	cout << "Constructor SDL Setup" << endl;
-
 	if (SDL_Init(SDL_INIT_VIDEO) < 0)
 	{
 		t_cout(12) << "SDL_Init couldn't be created";
@@ -46,6 +44,7 @@ CSDL_Setup::CSDL_Setup(bool* quit,int ScreenWidth, int ScreenHeight)
         t_cout(12) << "TTF couldn't be initialized";
        *quit = true;
     }
+    cout << "Constructor SDL Setup" << endl;
 }
 
 
@@ -55,6 +54,7 @@ CSDL_Setup::~CSDL_Setup()
 	SDL_DestroyRenderer(renderer);
 	delete mainEvent;
     TTF_Quit();
+    cout<< " CSDL_Setup( window/renderer/mainevent/TTF ) Destroyed! "<<endl;
 }
 
 

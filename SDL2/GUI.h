@@ -23,52 +23,76 @@ public:
     
     CGUI()
     {
-        const std::string resPath = "Date/fonts/";
-        //We'll render the string "TTF fonts are cool!" in white
-        //Color is in RGBA format
-        color = { 255, 255, 255, 255 };
-        image = renderText("TTF fonts are cool!", resPath + "FreeSans.ttf",
-                                        color, 64, csdl_setup->GetRenderer());
-        if (image == nullptr){
-            cout << " ERROR ON INITIALIZING TEXTURE IMAGE FOR TEXT/FONT ! ! ! "<<endl;
-        }
-        //Get the texture w/h so we can center it in the screen
-        iW=100;
-        iH=100;
-        SDL_QueryTexture(image, NULL, NULL, &iW, &iH);
+        mTexture = NULL;
+        mWidth = 0;
+        mHeight = 0;
+        Font = NULL;
+        cout << "Constructor CGUI" << endl;
+    }
+    
+    CGUI(SDL_Renderer *renderer)
+    {
+        this->renderer = renderer;
+        mTexture = NULL;
+        mWidth = 0;
+        mHeight = 0;
+        Font = NULL;
+        cout << "Constructor CGUI" << endl;
+    }
+    
+    ~CGUI()
+    {
+        free();
         
-        coords = { 0,0 };
+       // TTF_CloseFont(Font);
+        Font  = NULL;
         
+        cout<< " CGUI Destroyed! "<<endl;
     }
     
     
     
     // Methods
+    bool loadFromRenderedText(std::string textureText, SDL_Color textColor, SDL_Renderer *renderer);
+    void render(int x, int y, SDL_Renderer *renderer, SDL_Rect* clip = NULL, double angle = 0.0, SDL_Point* center = NULL, SDL_RendererFlip flip = SDL_FLIP_NONE);
+    bool loadMedia(SDL_Renderer *renderer);
     
-    SDL_Texture  *renderText(const std::string &message,
-                            const std::string &fontFile,
-                            SDL_Color color,
-                            int fontSize,
-                            SDL_Renderer *renderer);
     
-    void drawText(int x,int y);
+    //no renderer ( init on create obj / init constructor )
+    bool loadFromRenderedText(std::string textureText, SDL_Color textColor);
+    void render(int x, int y, SDL_Rect* clip = NULL, double angle = 0.0, SDL_Point* center = NULL, SDL_RendererFlip flip = SDL_FLIP_NONE);
+    bool loadMedia();
+    
+    
+    int getWidth();
+    int getHeight();
+    
+    void free()
+    {
+       	//Free texture if it exists
+        if (mTexture != NULL)
+        {
+            SDL_DestroyTexture(mTexture);
+            mTexture = NULL;
+            mWidth = 0;
+            mHeight = 0;
+        }
+    }
+
     
     
 private:
     
-    typedef struct coord2D
-    {
-        int x;
-        int y;
-    } coord2D; // x, y
-    
-    CSDL_Setup* csdl_setup;
-    SDL_Texture *image;
+    SDL_Texture* mTexture;
+    CSDL_Setup *csdl_setup;
     SDL_Color color;
-    int iW;
-    int iH;
+    SDL_Renderer *renderer;
     
-    coord2D coords;
+    int mWidth;
+	int mHeight;
+    
+    TTF_Font *Font;
+
     
 };
 
