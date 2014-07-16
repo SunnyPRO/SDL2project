@@ -77,6 +77,9 @@ bool CGUI::loadFromRenderedText(std::string textureText, SDL_Color textColor)
 	return mTexture != NULL;
 }
 
+//=================================================================================================
+//                    overloaded functions for render the text
+//=================================================================================================
 
 
 void CGUI::render(int x, int y, SDL_Renderer *renderer,SDL_Rect* clip, double angle, SDL_Point* center, SDL_RendererFlip flip)
@@ -111,18 +114,35 @@ void CGUI::render(int x, int y, SDL_Rect* clip, double angle, SDL_Point* center,
 	SDL_RenderCopyEx(this->renderer, mTexture, clip, &renderQuad, angle, center, flip);
 }
 
+void CGUI::render(int x, int y)
+{
+
+	//Set rendering space and render to screen
+	SDL_Rect renderQuad = { x, y, mWidth, mHeight };
+    
+	//Set clip rendering dimensions
+    
+	//Render to screen
+	SDL_RenderCopyEx(this->renderer, mTexture, NULL, &renderQuad, 0.0, NULL, SDL_FLIP_NONE);
+}
 
 
-bool CGUI::loadMedia(SDL_Renderer *renderer)
+
+//=================================================================================================
+//                    overloaded functions for loading fonts , text ( slow )
+//=================================================================================================
+
+
+bool CGUI::loadMedia(SDL_Renderer *renderer, string font)
 {
 	//Loading success flag
 	bool success = true;
     
 	//Open the font
-	Font = TTF_OpenFont("Tahoma.ttf", 28);
+	Font = TTF_OpenFont(font.c_str(), 28);
 	if (Font == NULL)
 	{
-		printf("Failed to load lazy font! SDL_ttf Error: %s\n", TTF_GetError());
+		printf("Failed to load font! SDL_ttf Error: %s\n", TTF_GetError());
 		success = false;
 	}
 	else
@@ -139,23 +159,24 @@ bool CGUI::loadMedia(SDL_Renderer *renderer)
 	return success;
 }
 
-bool CGUI::loadMedia()
+
+bool CGUI::loadMedia(string font, string text)
 {
 	//Loading success flag
 	bool success = true;
     
 	//Open the font
-	Font = TTF_OpenFont("Tahoma.ttf", 28);
+	Font = TTF_OpenFont(font.c_str(), 28);
 	if (Font == NULL)
 	{
-		printf("Failed to load lazy font! SDL_ttf Error: %s\n", TTF_GetError());
+		printf("Failed to load font! SDL_ttf Error: %s\n", TTF_GetError());
 		success = false;
 	}
 	else
 	{
 		//Render text
 		SDL_Color textColor = { 0, 0, 0 };
-		if (!this->loadFromRenderedText("The quick brown fox jumps over the lazy dog", textColor, this->renderer))
+		if (!this->loadFromRenderedText(text, textColor, this->renderer))
 		{
 			printf("Failed to render text texture!\n");
 			success = false;
@@ -166,7 +187,9 @@ bool CGUI::loadMedia()
 }
 
 
-//--------------------------------
+
+//--------------------------------------------------------------------------------------------
+
 
 int CGUI::getWidth()
 {

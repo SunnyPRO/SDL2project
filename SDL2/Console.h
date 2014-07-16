@@ -14,9 +14,9 @@ public:
 		ModeON,
 		ModeOFF
 	};
-	void cDrawText(int pX, int pY);
+	void render(int pX, int pY);
 	void cgetDates(valDates pA);
-	void cUpdate();
+	void update();
 
 private:
 	int mMode;

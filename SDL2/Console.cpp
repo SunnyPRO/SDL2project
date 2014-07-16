@@ -26,7 +26,7 @@ CConsole::~CConsole()
 }
 
 
-void CConsole::cDrawText(int pX, int pY)
+void CConsole::render(int pX, int pY)
 {
 	if (mMode == ModeON)
 	{
@@ -45,7 +45,7 @@ void CConsole::cDrawText(int pX, int pY)
 	}
 }
 
-void CConsole::cUpdate()
+void CConsole::update()
 {
 	if (csdl_setup->GetMainEvent()->type == SDL_KEYDOWN)
 	{

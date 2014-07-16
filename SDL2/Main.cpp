@@ -28,7 +28,7 @@ CMain::CMain(int passed_ScreenWidth, int passed_ScreenHeight)
 	Console = new CConsole(csdl_setup, tdates);
     
     GUI = new CGUI(csdl_setup->GetRenderer());
-    GUI->loadMedia();
+    GUI->loadMedia("Tahoma.ttf","ASD");
     
     cout << "Constructor CMain" << endl;
 }
@@ -70,11 +70,14 @@ void CMain::GameLoop()
 		ForestArea->DrawFront();
 		
 		Console->cgetDates(bob->returnDates(tdates));
-		Console->cDrawText(2, 20);
-		Console->cUpdate();
+		Console->render(2, 20);
+		Console->update();
 		
         SDL_SetRenderDrawColor(csdl_setup->GetRenderer(), 0xFF, 0xFF, 0xFF, 0xFF);
         GUI->render(MouseX,MouseY);
+        GUI->loadFromRenderedText(to_string(MouseX), { 0 , 0 , 0 } );
+        GUI->render(100,MouseY);
+        
 
 		csdl_setup->End();
 	}

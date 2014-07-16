@@ -55,13 +55,14 @@ public:
     // Methods
     bool loadFromRenderedText(std::string textureText, SDL_Color textColor, SDL_Renderer *renderer);
     void render(int x, int y, SDL_Renderer *renderer, SDL_Rect* clip = NULL, double angle = 0.0, SDL_Point* center = NULL, SDL_RendererFlip flip = SDL_FLIP_NONE);
-    bool loadMedia(SDL_Renderer *renderer);
+    bool loadMedia(SDL_Renderer *renderer,string font);
     
     
     //no renderer ( init on create obj / init constructor )
     bool loadFromRenderedText(std::string textureText, SDL_Color textColor);
-    void render(int x, int y, SDL_Rect* clip = NULL, double angle = 0.0, SDL_Point* center = NULL, SDL_RendererFlip flip = SDL_FLIP_NONE);
-    bool loadMedia();
+    void render(int x, int y, SDL_Rect* clip, double angle, SDL_Point* center, SDL_RendererFlip flip);
+    void render(int x, int y);
+    bool loadMedia(string font,string text);
     
     
     int getWidth();
