@@ -12,7 +12,7 @@ CEnvironment::CEnvironment(int ScreenWidth, int ScreenHeight, float *passed_Came
 		grass[i][j] = new CSprite(csdl_setup->GetRenderer(), "Data/resources/environment/grass.bmp", ScreenWidth * i, ScreenHeight * j, ScreenWidth, ScreenHeight, CameraX, CameraY, CCollisionRectangle());
 	
 	Mode = LevelCreation;
-	LoadFromFile();
+	generateFromFile();
 
 
 	OnePressed = false;
@@ -60,7 +60,7 @@ void CEnvironment::DrawFront()
 	}
 }
 
-void CEnvironment::LoadFromFile()
+void CEnvironment::generateFromFile()
 {
 	ifstream LoadedFile("Data/LevelLayout.txt");
 

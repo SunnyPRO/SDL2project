@@ -27,8 +27,8 @@ CMain::CMain(int passed_ScreenWidth, int passed_ScreenHeight)
 
 	Console = new CConsole(csdl_setup, tdates);
     
-    GUI = new CGUI(csdl_setup->GetRenderer());
-    GUI->loadMedia("Tahoma.ttf","ASD");
+    GUI = new CFont(csdl_setup->GetRenderer());
+    GUI->loadFont("Tahoma.ttf",14);
     
     cout << "Constructor CMain" << endl;
 }
@@ -73,10 +73,13 @@ void CMain::GameLoop()
 		Console->render(2, 20);
 		Console->update();
 		
-        SDL_SetRenderDrawColor(csdl_setup->GetRenderer(), 0xFF, 0xFF, 0xFF, 0xFF);
-        GUI->render(MouseX,MouseY);
-        GUI->loadFromRenderedText(to_string(MouseX), { 0 , 0 , 0 } );
-        GUI->render(100,MouseY);
+        SDL_SetRenderDrawColor(csdl_setup->GetRenderer(), 0xFF, 0xFF, 0xFF, 0xFF); //white
+        {
+            GUI->generateFromSurface("X:"+to_string(MouseX), { 0 , 0 , 0 } );
+            GUI->render(MouseX+15,MouseY-10);
+            GUI->generateFromSurface("Y:"+to_string(MouseY), { 0 , 0 , 0 } );
+            GUI->render(MouseX+15,MouseY);
+        }
         
 
 		csdl_setup->End();

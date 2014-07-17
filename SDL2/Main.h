@@ -5,7 +5,7 @@
 #include "MainCharacter.h"
 #include "Environment.h"
 #include "Console.h"
-#include "GUI.h"
+#include "Font.h"
 
 
 
@@ -43,6 +43,6 @@ private:
 	valDates tdates;
 	CConsole *Console;
     
-    CGUI *GUI;
+    CFont *GUI;
 
 };

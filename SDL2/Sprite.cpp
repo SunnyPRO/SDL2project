@@ -211,12 +211,19 @@ bool CSprite::isColliding(CCollisionRectangle theCollider)
 
 valDates CSprite::returnDates(valDates tdates)
 {
-	//tdates.A = _itoa(TEMPint[0], TEMPchar.A, 10);
-	//tdates.B = _itoa(TEMPint[1], TEMPchar.B, 10);
-	//tdates.C = _itoa(TEMPint[2], TEMPchar.C, 10);
-	//tdates.D = _itoa(TEMPint[3], TEMPchar.D, 10);
-	//tdates.E = _itoa(*CameraX, TEMPchar.E, 10);
-	//tdates.F = _itoa(*CameraY, TEMPchar.F, 10);
+	sprintf(TEMPchar.A, "%d" , TEMPint[0]);
+    tdates.A = TEMPchar.A;
+    sprintf(TEMPchar.B, "%d" , TEMPint[1]);
+    tdates.B = TEMPchar.B;
+    sprintf(TEMPchar.C, "%d" , TEMPint[2]);
+    tdates.C = TEMPchar.C;
+    sprintf(TEMPchar.D, "%d" , TEMPint[3]);
+    tdates.D = TEMPchar.D;
+    sprintf(TEMPchar.E, "%d" , (int)*CameraX);
+    tdates.E = TEMPchar.E;
+    sprintf(TEMPchar.F, "%d" , (int)*CameraY);
+    tdates.F = TEMPchar.F;
+
 
 	return tdates;
 }

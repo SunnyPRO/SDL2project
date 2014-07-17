@@ -20,7 +20,7 @@ public:
 	void Update();
 
 	void SaveToFile();
-	void LoadFromFile();
+	void generateFromFile();
 
 	enum ModeType
 	{

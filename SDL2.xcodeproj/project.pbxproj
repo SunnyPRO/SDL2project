@@ -19,7 +19,7 @@
 		63113662196E843C0022C26D /* Trunk.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6311365A196E83D10022C26D /* Trunk.png */; };
 		63113663196E843C0022C26D /* tom.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6311365B196E83D10022C26D /* tom.png */; };
 		63113664196E843C0022C26D /* StageLayout.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6311365C196E83D10022C26D /* StageLayout.txt */; };
-		63113669196E8BFC0022C26D /* GUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63113667196E8BFC0022C26D /* GUI.cpp */; };
+		63113669196E8BFC0022C26D /* Font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63113667196E8BFC0022C26D /* Font.cpp */; };
 		6311366B196E90D60022C26D /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6311366A196E90D60022C26D /* SDL2_ttf.framework */; };
 		63262962196E777300A2730D /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6326295E196E767200A2730D /* Main.cpp */; };
 		63262963196E777300A2730D /* HELP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63BA067B196D31A60063229D /* HELP.cpp */; };
@@ -97,8 +97,8 @@
 		6311365A196E83D10022C26D /* Trunk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trunk.png; sourceTree = "<group>"; };
 		6311365B196E83D10022C26D /* tom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tom.png; sourceTree = "<group>"; };
 		6311365C196E83D10022C26D /* StageLayout.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = StageLayout.txt; sourceTree = "<group>"; };
-		63113667196E8BFC0022C26D /* GUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GUI.cpp; sourceTree = "<group>"; };
-		63113668196E8BFC0022C26D /* GUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUI.h; sourceTree = "<group>"; };
+		63113667196E8BFC0022C26D /* Font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = Font.cpp; sourceTree = "<group>"; };
+		63113668196E8BFC0022C26D /* Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = Font.h; sourceTree = "<group>"; };
 		6311366A196E90D60022C26D /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
 		6326295E196E767200A2730D /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 		63BA0673196D31730063229D /* _tools.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = _tools.cpp; sourceTree = "<group>"; };
@@ -188,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				63113666196E868D0022C26D /* Body */,
-				63113665196E86830022C26D /* Header */,
 				630832AE196D249D00ACA97E /* Supporting Files */,
 			);
 			path = SDL2;
@@ -285,7 +284,7 @@
 		63113665196E86830022C26D /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				63113668196E8BFC0022C26D /* GUI.h */,
+				63113668196E8BFC0022C26D /* Font.h */,
 				63BA067A196D31A60063229D /* Environment.h */,
 				63BA067D196D31A60063229D /* Main.h */,
 				63BA067F196D31A60063229D /* MainCharacter.h */,
@@ -314,7 +313,8 @@
 				63BA0675196D31730063229D /* CollisionRectangle.cpp */,
 				63BA0677196D31730063229D /* Console.cpp */,
 				63BA0679196D31730063229D /* Environment.cpp */,
-				63113667196E8BFC0022C26D /* GUI.cpp */,
+				63113667196E8BFC0022C26D /* Font.cpp */,
+				63113665196E86830022C26D /* Header */,
 			);
 			name = Body;
 			sourceTree = "<group>";
@@ -394,7 +394,7 @@
 				6326296A196E777300A2730D /* CollisionRectangle.cpp in Sources */,
 				6326296B196E777300A2730D /* Console.cpp in Sources */,
 				6326296C196E777300A2730D /* Environment.cpp in Sources */,
-				63113669196E8BFC0022C26D /* GUI.cpp in Sources */,
+				63113669196E8BFC0022C26D /* Font.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,6 @@
 #pragma once
 #include "SDL_Setup.h"
+#include "Font.h"
 
 
 class CConsole
@@ -19,13 +20,14 @@ public:
 	void update();
 
 private:
+    CSDL_Setup* csdl_setup;
+    CFont* Font;
+    
+    
 	int mMode;
 	valDates mA;
-
-	CSDL_Setup* csdl_setup;
-
 	bool OnePressed;
-
 	string TEMPstr;
+    
 };
 

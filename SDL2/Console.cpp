@@ -15,13 +15,16 @@ CConsole::CConsole(CSDL_Setup* passed_csdl_setup, valDates pA)
 	 OnePressed = false;
 	 TEMPstr = '\0';
     
+    Font = new CFont(csdl_setup->GetRenderer());
+    Font->loadFont("Tahoma.ttf",12);
+    
     cout << "Constructor Console" << endl;
 }
 
 
 CConsole::~CConsole()
 {
-	//delete csdl_setup;
+	delete Font;
     cout<< " CConsole Destroyed! "<<endl;
 }
 
@@ -30,18 +33,25 @@ void CConsole::render(int pX, int pY)
 {
 	if (mMode == ModeON)
 	{
+        
 		TEMPstr = "Mouse X : ";
-		//stringColor(csdl_setup->GetRenderer(), pX, pY + -30, strcat((char*) TEMPstr.c_str(), mA.E), 0xFF3F3F3F);
+        Font->generateFromSurface(strcat((char*) TEMPstr.c_str(), mA.E), { 0 , 0 , 0} );
+        Font->render(pX, pY + -15);
 		TEMPstr = "Mouse Y : ";
-		//stringColor(csdl_setup->GetRenderer(), pX, pY + 0, strcat((char*) TEMPstr.c_str(), mA.F), 0xFF3F3F3F);
+        Font->generateFromSurface(strcat((char*) TEMPstr.c_str(), mA.F), { 0 , 0 , 0} );
+        Font->render(pX, pY + 0);
 		TEMPstr = "Collision X : ";
-		//stringColor(csdl_setup->GetRenderer(), pX, pY + 30, strcat((char*) TEMPstr.c_str(), mA.A), 0xFF3F3F3F);
+        Font->generateFromSurface(strcat((char*) TEMPstr.c_str(), mA.A), { 0 , 0 , 0} );
+        Font->render(pX, pY + 15);
 		TEMPstr = "Collision Y : ";
-		//stringColor(csdl_setup->GetRenderer(), pX, pY + 60, strcat((char*) TEMPstr.c_str(), mA.B), 0xFF3F3F3F);
+        Font->generateFromSurface(strcat((char*) TEMPstr.c_str(), mA.B), { 0 , 0 , 0} );
+        Font->render(pX, pY + 30);
 		TEMPstr = "Collision W : ";
-		//stringColor(csdl_setup->GetRenderer(), pX, pY + 90, strcat((char*) TEMPstr.c_str(), mA.C), 0xFF3F3F3F);
+        Font->generateFromSurface(strcat((char*) TEMPstr.c_str(), mA.C), { 0 , 0 , 0} );
+        Font->render(pX, pY + 45);
 		TEMPstr = "Collision H : ";
-		//stringColor(csdl_setup->GetRenderer(), pX, pY + 120, strcat((char*) TEMPstr.c_str(), mA.D), 0xFF3F3F3F);
+        Font->generateFromSurfaceEx(strcat((char*) TEMPstr.c_str(),mA.D), { 255 , 0 , 0} , { 0 , 0 , 0} , TTF_STYLE_ITALIC|TTF_STYLE_BOLD, TTF_TYPE_BLENDED , true);
+        Font->render(pX, pY + 60);
 	}
 }
 
@@ -54,12 +64,12 @@ void CConsole::update()
 		{
 			if (mMode == ModeON)
 			{
-				t_cout(14) << "Draw Text OFF";
+				t_cout(14) << "Console OFF";
 				mMode = ModeOFF;
 			}
 			else
 			{
-				t_cout(14) << "Draw Text ON" ;
+				t_cout(14) << "Console ON" ;
 				mMode = ModeON;
 			}
 				
