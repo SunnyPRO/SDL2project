@@ -13,87 +13,138 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы исходного кода\PRIMITIVEStest">
+      <UniqueIdentifier>{1356a2ad-0e94-45d9-9e99-c48189526524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\PRIMITIVEStest\Heads">
+      <UniqueIdentifier>{88da2d37-9b71-43b2-81dc-1a5cfe1e99c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\PRIMITIVEStest\Bodys">
+      <UniqueIdentifier>{5797842c-8530-45a4-89e8-a66e4a899474}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_tools.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="CollisionRectangle.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="Console.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="Environment.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="GUI.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="Main.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="MainCharacter.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="SDL_Setup.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="Shitdigest.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
     <ClInclude Include="stdafx.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="Tree.h">
+    <ClInclude Include="cConsole.h">
       <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cEnvironment.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cFont.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cMain.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cMainCharacter.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cSDL_Setup.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cSprite.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cTree.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cCollisionRectangle.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cVariables.hpp">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="PRIMITIVEStest\zllDodecaedru.h">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Heads</Filter>
+    </ClInclude>
+    <ClInclude Include="PRIMITIVEStest\zllGeometricObj.h">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Heads</Filter>
+    </ClInclude>
+    <ClInclude Include="PRIMITIVEStest\zllPrimitives.h">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Heads</Filter>
+    </ClInclude>
+    <ClInclude Include="PRIMITIVEStest\zllViewPort.h">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Heads</Filter>
+    </ClInclude>
+    <ClInclude Include="PRIMITIVEStest\zllWorldCoord.h">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Heads</Filter>
+    </ClInclude>
+    <ClInclude Include="PRIMITIVEStest\zllWorldSpace.h">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Heads</Filter>
+    </ClInclude>
+    <ClInclude Include="PRIMITIVEStest\zllTest.h">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Heads</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_tools.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
-    <ClCompile Include="CollisionRectangle.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="Console.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="Environment.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="GUI.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
     <ClCompile Include="HELP.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="MainCharacter.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="RPG.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="SDL_Setup.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="Shitdigest.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
-    <ClCompile Include="Tree.cpp">
+    <ClCompile Include="cMain.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
+    <ClCompile Include="cTree.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="RPG.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="cCollisionRectangle.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="cConsole.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="cEnvironment.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="cFont.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="cSDL_Setup.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="cMainCharacter.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="cSprite.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="PRIMITIVEStest\zllDodecaedru.cpp">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Bodys</Filter>
+    </ClCompile>
+    <ClCompile Include="PRIMITIVEStest\zllGeometricObj.cpp">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Bodys</Filter>
+    </ClCompile>
+    <ClCompile Include="PRIMITIVEStest\zllPrimitives.cpp">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Bodys</Filter>
+    </ClCompile>
+    <ClCompile Include="PRIMITIVEStest\zllViewPort.cpp">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Bodys</Filter>
+    </ClCompile>
+    <ClCompile Include="PRIMITIVEStest\zllWorldCoord.cpp">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Bodys</Filter>
+    </ClCompile>
+    <ClCompile Include="PRIMITIVEStest\zllWorldSpace.cpp">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Bodys</Filter>
+    </ClCompile>
+    <ClCompile Include="PRIMITIVEStest\zllTest.cpp">
+      <Filter>Файлы исходного кода\PRIMITIVEStest\Bodys</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

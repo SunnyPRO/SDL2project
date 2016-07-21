@@ -1,0 +1,50 @@
+﻿  cCollisionRectangle.cpp
+  cConsole.cpp
+cConsole.cpp(34): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118): см. объявление "strcat"
+cConsole.cpp(36): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118): см. объявление "strcat"
+cConsole.cpp(38): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118): см. объявление "strcat"
+cConsole.cpp(40): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118): см. объявление "strcat"
+  cEnvironment.cpp
+cEnvironment.cpp(90): warning C4553: ==: оператор не имеет результата; возможно, имелся в виду "="
+cEnvironment.cpp(175): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  cFont.cpp
+cFont.cpp(294): warning C4101: rect: неиспользованная локальная переменная
+  cMain.cpp
+cMain.cpp(48): warning C4244: инициализация: преобразование "float" в "Uint32", возможна потеря данных
+cMain.cpp(53): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  cTree.cpp
+  HELP.cpp
+  cMainCharacter.cpp
+cMainCharacter.cpp(18): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+cMainCharacter.cpp(52): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+cMainCharacter.cpp(95): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+cMainCharacter.cpp(96): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+cMainCharacter.cpp(101): warning C4018: <: несоответствие типов со знаком и без знака
+cMainCharacter.cpp(103): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+cMainCharacter.cpp(114): warning C4018: <: несоответствие типов со знаком и без знака
+cMainCharacter.cpp(147): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+cMainCharacter.cpp(148): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+cMainCharacter.cpp(158): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+cMainCharacter.cpp(162): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+cMainCharacter.cpp(166): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+cMainCharacter.cpp(170): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  RPG.cpp
+  cSDL_Setup.cpp
+  cSprite.cpp
+cSprite.cpp(38): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+cSprite.cpp(39): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+cSprite.cpp(54): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+cSprite.cpp(55): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+cSprite.cpp(73): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+cSprite.cpp(74): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+cSprite.cpp(76): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+cSprite.cpp(77): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  stdafx.cpp
+  _tools.cpp
+  Создание кода
+  Создание кода завершено
+  SDL2project.vcxproj -> C:\Users\Sunny\Desktop\Projects\SDL\SDL2project\Release\SDL2project.exe

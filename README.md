@@ -1,5 +1,7 @@
 SDL2project
 ===========
 
+Exemplu proiect SDL (2D,ttf).
 
-AHHAHA
+Branch-Master: MAC version.
+Branch-Windows: Windows version.

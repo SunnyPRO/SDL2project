@@ -1,6 +1,2 @@
----====BEGIN_COORDONATES====---
-x: 338  y: 147
-x: 579  y: 139
-x: 460  y: -23
-x: 524  y: 294
----====END_COORDONATES====---
+BEGIN_COORDONATES
+END_COORDONATES

@@ -1,0 +1,7 @@
+﻿  cEnvironment.cpp
+c:\users\sunny\desktop\projects\sdl\sdl2project\sdl2project\cenvironment.cpp(90): warning C4553: ==: оператор не имеет результата; возможно, имелся в виду "="
+c:\users\sunny\desktop\projects\sdl\sdl2project\sdl2project\cenvironment.cpp(175): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/PROFILE"
+cCollisionRectangle.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/OPT:LBR"
+MSVCRTD.lib(cinitexe.obj) : warning LNK4098: библиотека по умолчанию "msvcrt.lib" противоречит использованию других библиотек; используйте параметр /NODEFAULTLIB:library
+  SDL2project.vcxproj -> C:\Users\Sunny\Desktop\Projects\SDL\SDL2project\Debug\SDL2project.exe

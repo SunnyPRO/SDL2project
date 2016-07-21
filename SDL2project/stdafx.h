@@ -1,11 +1,15 @@
 #pragma once
 
+
+#include "cVariables.hpp"
+
+#ifndef __SDL__INCLUDES__
+#define __SDL__INCLUDES__
 #include <SDL.h>
 #include <SDL_image.h>
 #include <SDL_mixer.h>
-//#include <SDL2_gfxPrimitives.h>
-//#include <SDL2_gfxPrimitives_font.h>
 #include <SDL_ttf.h>
+#endif
 
 // if we're compiling for iOS (iPhone/iPad)
 #ifdef __IPHONEOS__
@@ -14,30 +18,24 @@
 #	include <SDL_opengl.h> // otherwise we want to use OpenGL
 #endif
 
-
+#ifndef __DEFAULT__INCLUDES__
+#define __DEFAULT__INCLUDES__
 #include <iostream> //Project made tools
-using namespace std;
-
-//#include <windows.h>
-#include <string>
-
-#include <stdio.h> 
-//#include <conio.h>
 #include <time.h>
+#include <string>
+#include <stdio.h> 
+#include <vector>
 #include <stdlib.h>
+#include <fstream>
+#include <sstream>
+using namespace std;
+#endif
+
 
 #include "_tools.h"
 
 
-struct valDates
-{
-	char* A;
-	char* B;
-	char* C;
-	char* D;
-	char* E;
-	char* F;
-};
+
 
 
 

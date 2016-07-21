@@ -61,6 +61,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -82,60 +83,54 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CollisionRectangle.h" />
-    <ClInclude Include="Console.h" />
-    <ClInclude Include="Environment.h" />
-    <ClInclude Include="GUI.h" />
-    <ClInclude Include="Main.h" />
-    <ClInclude Include="MainCharacter.h" />
-    <ClInclude Include="SDL_Setup.h" />
-    <ClInclude Include="Shitdigest.h" />
-    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="cCollisionRectangle.h" />
+    <ClInclude Include="cConsole.h" />
+    <ClInclude Include="cEnvironment.h" />
+    <ClInclude Include="cFont.h" />
+    <ClInclude Include="cMain.h" />
+    <ClInclude Include="cMainCharacter.h" />
+    <ClInclude Include="cSDL_Setup.h" />
+    <ClInclude Include="cSprite.h" />
+    <ClInclude Include="cTree.h" />
+    <ClInclude Include="cVariables.hpp" />
+    <ClInclude Include="PRIMITIVEStest\zllDodecaedru.h" />
+    <ClInclude Include="PRIMITIVEStest\zllGeometricObj.h" />
+    <ClInclude Include="PRIMITIVEStest\zllPrimitives.h" />
+    <ClInclude Include="PRIMITIVEStest\zllTest.h" />
+    <ClInclude Include="PRIMITIVEStest\zllViewPort.h" />
+    <ClInclude Include="PRIMITIVEStest\zllWorldCoord.h" />
+    <ClInclude Include="PRIMITIVEStest\zllWorldSpace.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Tree.h" />
     <ClInclude Include="_tools.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CollisionRectangle.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Console.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Environment.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="GUI.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
+    <ClCompile Include="cCollisionRectangle.cpp" />
+    <ClCompile Include="cConsole.cpp" />
+    <ClCompile Include="cEnvironment.cpp" />
+    <ClCompile Include="cFont.cpp" />
+    <ClCompile Include="cMain.cpp" />
+    <ClCompile Include="cTree.cpp" />
     <ClCompile Include="HELP.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="MainCharacter.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="RPG.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="SDL_Setup.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Shitdigest.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Sprite.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
+    <ClCompile Include="cMainCharacter.cpp" />
+    <ClCompile Include="PRIMITIVEStest\zllTest.cpp" />
+    <ClCompile Include="PRIMITIVEStest\zllDodecaedru.cpp" />
+    <ClCompile Include="PRIMITIVEStest\zllGeometricObj.cpp" />
+    <ClCompile Include="PRIMITIVEStest\zllPrimitives.cpp" />
+    <ClCompile Include="PRIMITIVEStest\zllViewPort.cpp" />
+    <ClCompile Include="PRIMITIVEStest\zllWorldCoord.cpp" />
+    <ClCompile Include="PRIMITIVEStest\zllWorldSpace.cpp" />
+    <ClCompile Include="RPG.cpp" />
+    <ClCompile Include="cSDL_Setup.cpp" />
+    <ClCompile Include="cSprite.cpp" />
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="Tree.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="_tools.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

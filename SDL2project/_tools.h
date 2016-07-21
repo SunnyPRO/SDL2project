@@ -46,9 +46,9 @@ public:
 		template<typename T>
 		t_ostream &operator<<(const T &x)
 		{
-			//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 			cout << x;
-			//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 			return *this;
 		}
 		////////////////////////////////////////////////////////////////////

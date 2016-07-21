@@ -1,0 +1,3 @@
+<< " Programul_Nr1  \n  1. Creare container#1(stack/stiva)\n  2. Sortare container#1\n  3. Citirea container\n  4. Cautare in container element(container#1)\n  "
+			<< "5. Crearea container#2\n  6. Citirea container#2(queue/coada)\n  7. Sortare container#2\n  8. Citirea container#1 si #2\n  9. Concatenarea container #1 + #2 = #3\n  
+			10. Citirea container#3\n  11. Calcularea elementelor container#3\n\n  12. Sortarea container#1 INVERSA\n  13. Sortarea container#2 INVERSA\n  14. Iesire\n->";
