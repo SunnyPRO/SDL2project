@@ -1,3 +1,42 @@
-<< " Programul_Nr1  \n  1. Creare container#1(stack/stiva)\n  2. Sortare container#1\n  3. Citirea container\n  4. Cautare in container element(container#1)\n  "
-			<< "5. Crearea container#2\n  6. Citirea container#2(queue/coada)\n  7. Sortare container#2\n  8. Citirea container#1 si #2\n  9. Concatenarea container #1 + #2 = #3\n  
-			10. Citirea container#3\n  11. Calcularea elementelor container#3\n\n  12. Sortarea container#1 INVERSA\n  13. Sortarea container#2 INVERSA\n  14. Iesire\n->";
+#pragma once
+#include "cSprite.h"
+#include "cSDL_Setup.h"
+#include "stdafx.h"
+#include "cTree.h"
+
+
+
+class cEnvironment
+{
+public:
+	cEnvironment(int ScreenWidth, int ScreenHeight, float *CameraX, float *CameraY, cSDL_Setup* csdl_setup);
+	~cEnvironment();
+
+	void DrawBack();
+	void DrawFront();
+
+	void Update();
+
+	void SaveToFile();
+	void generateFromFile();
+
+	enum ModeType
+	{
+		GamePlay,
+		LevelCreation
+	};
+
+	vector<cTree*> GetTrees() { return trees; }
+private:
+	int Mode;
+	cSDL_Setup* csdl_setup;
+	float* CameraX;
+	float* CameraY;
+
+	bool OnePressed;
+
+
+	cSprite* grass[2][2];
+	vector<cTree*> trees;
+};
+
